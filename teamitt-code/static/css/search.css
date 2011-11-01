@@ -1,0 +1,36 @@
+.searchHeader
+{
+color: #00578a;
+font-weight: bold;
+padding-bottom: 5px;
+width: 50%;
+border-bottom: 1px solid #e5e5e5;
+margin-bottom: 10px;
+font-size: 18px;
+}
+.tuserpic
+{
+margin-right: 7px;
+width: 70px;
+height: 70px;
+overflow: hidden;
+text-align: center;
+}
+.tuserpic img
+{
+max-height: 70px;
+}
+.search-results ul li
+{
+list-style-type: none;
+margin-bottom: 5px;
+clear: both;
+border-bottom: 1px solid #f6f6f6;
+width: 400px;
+min-height: 70px;
+padding-bottom: 5px;
+}
+.search-results ul li a
+{
+font-weight: bold;
+}

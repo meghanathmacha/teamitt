@@ -1,0 +1,43 @@
+create database ILMT; 
+use ILMT; 
+
+create table ILMT_phase ( phaseID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(phaseID), phase VARCHAR(10), description VARCHAR(1000) NOT NULL DEFAULT '-', active INT NOT NULL DEFAULT 0); 
+
+create table task_type (typeID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(typeID), type VARCHAR(15) NOT NULL); 
+
+create table task_languages (languageID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(languageID), language VARCHAR(20) NOT NULL); 
+
+create table task (taskID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(taskID), name VARCHAR(50) NOT NULL, category VARCHAR(5) NOT NULL, typeID INT NOT NULL, languageID INT NOT NULL, phaseID INT NOT NULL, ownerID INT NOT NULL, deleted VARCHAR(1) NOT NULL DEFAULT 0);
+
+create table association (associationID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (associationID), name VARCHAR(100) NOT NULL, join_date DATE NOT NULL );
+ 
+create table users ( userID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY (userID), username VARCHAR(20) NOT NULL, password VARCHAR(30) NOT NULL, name VARCHAR(50) NOT NULL, associationID INT NOT NULL, join_date DATE NOT NULL, email VARCHAR(50) NOT NULL, activated VARCHAR(1) NOT NULL DEFAULT 0, deleted VARCHAR(1) NOT NULL DEFAULT 0); 
+
+create table tool_category ( categoryID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(categoryID), category VARCHAR(30) NOT NULL, deleted VARCHAR(1) NOT NULL DEFAULT 0);
+ 
+create table tools ( toolID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(toolID), name VARCHAR(50) NOT NULL, taskID INT NOT NULL, categoryID INT NOT NULL, description VARCHAR(1000) NOT NULL DEFAULT '-', deleted VARCHAR(1) NOT NULL DEFAULT 0);
+
+create table version ( versionID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(versionID), toolID INT NOT NULL, author VARCHAR(100) NOT NULL, upload_date TIMESTAMP NOT NULL, uploaderID INT NOT NULL, current_copy VARCHAR(1) NOT NULL DEFAULT 0, version_number VARCHAR(10) NOT NULL, verfication_statusID INT NOT NULL, verficationID INT NOT NULL, filename VARCHAR(100) NOT NULL, filepath VARCHAR(300) NOT NULL, remarks VARCHAR(500) NOT NULL DEFAULT '-', deleted VARCHAR(1) NOT NULL DEFAULT 0);   
+
+create table version_comments ( commentID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(commentID), versionID INT NOT NULL, userID INT NOT NULL, parent_commentID INT NOT NULL DEFAULT 0, comment VARCHAR(500) NOT NULL, deleted VARCHAR(1) NOT NULL DEFAULT 0);
+ 
+create table verfication_status( verfication_statusID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(verfication_statusID), status VARCHAR(20) NOT NULL);
+ 
+create table upload_permissions ( taskID INT NOT NULL, toolID INT DEFAULT 0, versionID INT DEFAULT 0, userID INT NOT NULL); 
+
+create table user_tool_permissions ( versionID INT NOT NULL, userID INT NOT NULL); 
+
+create table group_tool_permissions ( versionID INT NOT NULL, groupID INT NOT NULL);
+
+create table groups ( groupID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(groupID), associationID INT NOT NULL, userID INT NOT NULL);  
+
+create table verification (verificationID INT NOT NULL AUTO_INCREMENT, PRIMARY KEY(verificationID), date_sent TIMESTAMP NOT NULL, date_done TIMESTAMP NOT NULL, verificationcode VARCHAR(30) NOT NULL DEFAULT '-', remarks VARCHAR(500) NOT NULL DEFAULT '-', deleted VARCHAR(1) NOT NULL DEFAULT 0); 
+
+-- tables to make :: log , marquee comments on the main display, 
+
+
+--
+--inserting some static data into the tables 
+-- 
+
+

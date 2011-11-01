@@ -1,0 +1,215 @@
+.pageName
+{
+margin: 20px 10px;
+}
+.bidHeading
+{
+width: 500px;
+margin: 0 auto;
+padding: 10px;
+font-size: 20px;
+color: SlateGrey;
+}
+.bidtext
+{
+
+border:1px solid SlateGrey;
+padding: 7px;
+}
+.timercont
+{
+background: SlateGrey;
+border:1px solid SlateGrey;
+color:#fff;
+padding: 3px;
+text-align:center;
+width: 80%;
+margin-bottom: 4px;
+}
+.gift
+{
+width: 420px;
+margin:10px 10px;
+padding: 5px;
+border-radius:15px;
+float: left;
+}
+.gift:nth-child(odd) div.gift-param-wrapper
+{
+text-align: right;
+}
+.active
+{
+
+background: transparent url("../images/backdrops.png") repeat;
+}
+.inactive
+{
+position: relative;
+background: #3b3131;
+
+}
+.inactive:after
+{
+content:url("../images/reward-locked.png");
+position: absolute;
+top:-10px;
+right:-5px;
+-webkit-transform: rotate(30deg);
+-moz-transform: rotate(30deg);
+transform: rotate(30deg);
+box-shadow: 0px 0px 10px #3b3131;
+}
+.newGoals
+{
+
+}
+.newGoal
+{
+padding: 8px 10px;
+background: #f6f6f6;
+margin: 4px 0px;
+cursor: pointer;
+}
+.newGoal:hover
+{
+background: #e5e5e5;
+}
+.gsel
+{
+background: #c25547;
+color: #FFF;
+font-weight: bold;
+}
+.gsel:hover
+{
+background: #c25547;
+
+}
+.active .gift-container
+{
+background: #f6f6f6;
+}
+.transact .gift-container
+{
+background: gold;
+}
+.addnewLabel
+{
+cursor: pointer;
+padding: 4px;
+font-size: 13px;
+font-weight: bold;
+text-decoration: underline;
+}
+.addnewGoal span:nth-child(2)
+{
+display: none;
+padding: 3px;
+}
+
+.addnewGoal span:nth-child(2) input[type='text']
+{
+padding: 4px;
+width: 300px;
+}
+
+.gift-container
+{
+padding: 10px;
+border-radius:12px;
+
+}
+.gift .gift-title
+{
+font-size: 14px;
+font-weight: bold;
+color:LightSlateGrey;
+margin: 5px 0px;;
+}
+
+.gift .gift-img
+{
+border-radius:10px;
+background: #e5e5e5;
+padding: 4px;
+width: 100%;
+position: relative;
+height: 140px;
+}
+
+.gift .gift-img .bid-form
+{
+position:absolute;
+top:0;
+text-align: left;
+width: 140px;
+font-size: 12px;
+padding: 12px;
+height: 140px;
+}
+
+.gift .gift-img .bid-form .bid-form-container
+{
+margin-top:5px;
+display:none;
+}
+
+.gift .gift-img .bid-form .bid-now
+{
+
+}
+.gift .gift-img img
+{
+
+border-radius:8px;
+}
+
+.gift:nth-child(odd) .gift-img .bid-form
+{
+left:0;
+}
+
+.gift:nth-child(even) .gift-img .bid-form
+{
+right:0;
+}
+.gift .gift-desc
+{
+font-size: 12px;
+padding: 4px;
+}
+.inactive .desc-span
+{
+display:none;
+}
+
+.inactive .err-span
+{
+visibility: hidden;
+color: #ff0;
+font-size: 12px;
+padding-left: 25px;
+}
+
+.inactive:hover .err-span
+{
+visibility: visible;
+}
+
+.bid-form-thank { display: none; padding: 2px 5px; }
+.bid-form-thank h3 { font-size: 12px; }
+
+div.loading { height:50px; background: transparent url("/static/images/loading.gif") no-repeat center center; }
+.resetbid { cursor: pointer; margin: 2px 5px; text-decoration: underline; font-size: 12px; }
+
+/* Style for gift box added here */
+.bid-point { border: 1px solid #3b3131; color: #3b3131; font-size: 11px; padding: 3px; width: 80px; }
+.bid-submit { background-image: url("/static/images/btn_tile.gif"); border: 1px solid #7B070E; color: #FFFFFF; font-family: Arial,Helvetica,sans-serif; font-style: normal; font-weight: 600; }
+.btn_style { background-image: url("/static/images/btn_tile.gif"); border: 1px solid #7B070E; color: #FFFFFF; font-family: Arial,Helvetica,sans-serif; font-style: normal; font-weight: 700;  margin:5px 30px; display:block; font-size: 12px; padding: 3px 5px; width: 50px;cursor: pointer; }
+.back { z-index: 1; }
+.front { z-index: 2; }
+.err { color: firebrick; font-size:13px;}
+.suc { color: #255c47; font-size:14px;}
+
+

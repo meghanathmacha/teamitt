@@ -1,0 +1,36 @@
+
+.button {
+   background: #00578a url("../images/btn_big.png") no-repeat;
+   padding: 4px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   khtml-border-radius: 4px;
+   border-radius: 4px;
+   color: #fff;
+   border-width: 0px;
+   vertical-align: middle;
+margin: 2px;
+cursor:pointer;
+   }
+
+.button:hover {
+background-position: left -28px;   
+}
+.button:active {
+   }
+.disableButton{
+   background: -webkit-gradient(linear, left top, left bottom, from(#3b3131), to(#111));
+   background: -moz-linear-gradient(top, #3b3131, #111);
+   padding: 2px 2px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   color: #fff;
+   font-size: 14px;
+   font-family: Arial;
+   text-decoration: none;
+   vertical-align: middle;
+border: 1px solid #3b3131;
+margin: 2px;
+opacity:0.5;
+}

@@ -1,0 +1,45 @@
+.edit_date_div a.dp-choose-date
+{
+	text-decoration: initial;
+	border-radius: 4px;
+color: white;
+border-width: 0px;
+vertical-align: middle;
+margin: 2px;
+cursor: pointer;	
+background:url("../images/btn_big.png");
+padding:4px;
+margin-left:20px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+khtml-border-radius: 4px;
+}
+.edit_date_div a.dp-choose-date:hover
+{
+background-position: left -28px;
+}
+.edit_date_inp{
+border: 0px solid;
+padding: 6px;
+}
+#date_submit{
+margin-left: 220px;
+margin-top: 23px;
+}
+.edit_date_div .button:hover {
+   color: Ivory;
+   }
+.edit_date_div .button {
+padding:4px;
+}
+.edit_date_inp a
+{
+margin:1px 3px 0;
+}
+.edit_date_div span {
+padding:19px;
+margin-left:26px;
+}
+.edit_date_div {
+margin-top:8px;
+}

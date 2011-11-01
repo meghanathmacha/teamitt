@@ -1,0 +1,27 @@
+.goal_row img {
+width:37px;
+}
+.goal_row:hover {
+background-color:lavender;
+}
+.goal_row {
+padding:5px;
+cursor:pointer;
+padding: 5px;
+height: 48px;
+border-bottom: 1px solid lavender;
+
+}
+.goal_row .goal_name {
+padding-left:45px;
+margin-left:51px;
+font-weight:bold;
+margin-top:17px;
+}
+.goal_row .goal_img {
+float:left;
+}
+.clr
+{
+clear:both;
+}

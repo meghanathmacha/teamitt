@@ -1,0 +1,457 @@
+* { margin: 0; padding: 0; }
+body
+{
+font-size:14px;
+font-family:Arial,Helvatica,sans-serif;
+color:#3b3131;
+background:#ffffff; 
+}
+a { color:white;text-decoration:none;}
+.clr
+{
+clear:both;
+}
+.university_div a
+{
+color:red;
+
+}
+div.top
+{
+	    text-align: center;
+width:860px;
+margin:0 auto;
+border:1px solid #e5e5e5;
+border-radius:5px 5px;
+box-shadow:0px 0px 7px #e5e5e5;
+padding:0px 4px;
+}
+
+div.elem
+{
+height:10px;
+width:10px;
+display:inline;
+text-align: center;
+border-right:1px solid #e5e5e5;
+}
+div.elem a
+{
+color:graytext;
+padding:4px 8px;
+}
+div.elem a:hover
+{
+background: #345873;
+color:#fff;
+border-radius:5px;
+}
+div.border
+{
+width:1024px;
+margin: 0px auto;
+}
+div.border .error
+{
+    background: none repeat scroll 0 0 #FAF0BB;
+    border: 1px solid #D7B269;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    width: 400px;
+}
+div.img
+{
+margin: 28px 15px;
+height: 140px;
+width: 480px;
+float: left;
+border:1px solid #e5e5e5;
+border-radius:5px 5px;
+box-shadow:0px 0px 4px #345873;
+font-size: 13px;
+position:relative;
+padding-bottom:50px;
+}
+div.left_img
+{
+width:12%;
+height:140px;
+float:left;
+background-color:#A0CFEC;
+border-radius:5px;
+} 
+div.left_img img{
+ width:41px; 
+}
+div.left_img td{
+padding:1px 6px;
+}
+div.right_img
+{
+width:88%;
+height:140px;
+float:right;
+} 
+div.tabs
+{
+position:absolute;
+top:-22px;
+left:4px;
+}
+div.tabs a
+{
+font-size:11px;
+padding:4px 5px;
+border:1px solid #DDDDDD;
+color:#111111;
+border-radius:5px 5px 0px 0px;
+-moz-border-radius:5px 5px 0px 0px;
+}
+div.tabs a:hover
+{
+}
+div.image
+{
+width:135px;
+height:130px;
+margin:2px;
+ float:left; 
+position:relative;
+}
+div.image .fund{
+padding:2px;
+margin-top:4px;
+white-space:nowrap;
+position:absolute;
+bottom:0px;
+left:4px;
+text-align:center;
+}	
+div.events
+{
+float:left;
+width:70px;
+height:130px;
+padding:3px;
+}
+div.events ul
+{
+margin-top:3px;
+}
+div.events ul li
+{
+list-style-type:none;
+padding:2px 0px;
+}
+div.events ul li a
+{
+background:transparent  url("/static/images/li.gif") no-repeat center left;
+padding-left:12px;
+}
+div.eventData
+{
+padding:5px 10px;
+}	
+div.eventData ul
+{
+list-style-position:inside;
+margin:8px 10px;
+}
+div.eventData ul li
+{
+list-style-image:url("/static/images/li.gif");
+}
+div.investor_div{
+width:220px;
+height:139px;
+overflow:auto;
+font-size: 11px;
+font-weight: bold;
+}
+div.rating_div{
+width:220px;
+height:139px;
+overflow:auto;
+font-size: 11px;
+font-weight: bold;
+}
+div.university_div{
+width:220px;
+height:139px;
+overflow:auto;
+font-size: 11px;
+font-weight: bold;
+}
+div.desc{
+float:right;
+padding:1px;
+width:200px;
+}
+div.desc td{
+padding:2px 1px;
+font-size: 11px;
+font-weight: bold;
+text-transform: capitalize;
+}
+div.desc table tr td:nth-child(1)
+{
+}
+div.name
+{
+	font-weight: normal;
+}
+div.image .cont
+{
+padding:4px;
+background:#FFFfff;
+width:120px;
+max-height:90px;
+overflow:hidden;
+vertical-align:middle;
+text-align:center;
+border-radius:5px 5px;
+box-shadow:0px 0px 12px #7f462c;
+}
+div.image label
+{
+margin:2px;
+}
+div.change{
+text-align:right;
+width:100%;
+margin:8px auto;
+}
+div.change span{
+padding:2px 20px;
+}
+div.change .button1{
+padding:2px 60px;
+display:inline;
+}
+div.change .button2{
+padding:2px 60px;
+display:inline;
+}
+#downchange
+{
+width: 1024px;
+}
+
+#logo
+{
+width:1024px;
+padding-top:10px;
+margin:10px auto;
+}
+#logo h1
+{
+font-size:40px;
+color:#345873;
+}
+
+#logo h3
+{
+margin-left:0px;
+/* background:transparent url("/static/images/star_full2.png") no-repeat left center; */
+padding-left:20px;
+}
+#content 
+{
+min-height: 400px;
+width:1024px;
+margin:0 auto;
+}
+#footer
+{
+width:1024px;
+margin:20px auto;
+color:#111111;
+border-top:1px solid #ddd;
+padding-top:10px;
+font-size:13px;
+}
+.fl
+{
+float:right;;
+}
+#footer a
+{
+color:#111111;
+margin-right:4px;
+}
+#footer a:hover
+{
+text-decoration: underline;
+}
+#topchange
+{
+margin-top:15px;
+}
+
+/* add events styles */
+
+.addevent { cursor:pointer; }
+#eventCont { 
+position:absolute;
+top:10%;
+left:30%;
+width:40%; 
+min-height:60px; 
+overflow:auto;
+background:transparent url("../images/backdrops.png") repeat;
+border-radius:8px;
+box-shadow:0px 0px 10px #3b3131;
+padding:8px;
+display:none;
+z-index:4;
+}
+#eventWrap {
+background:#fff;
+border-radius:8px;
+position:relative;
+padding-bottom:20px;
+min-height:60px;
+}
+.eload
+{
+position:absolute;
+top:10px;
+left:20%;
+height:60px;
+padding:8px;
+font-size:19px;
+}
+/*  user_pic style added by jaydeep */
+.action_user{
+background-color:skyblue;
+margin-left:-1;
+margin-top:141px;
+padding:4px;
+width:444;
+border-radius: 0 0 5px 5px;
+-moz-border-radius: 0 0 5px 5px;
+height:40px;
+}
+.action_user img {
+width:37px;
+}
+.action_user td {
+padding-left:7px;
+}
+/* search style */
+#search-div
+{
+
+padding:4px;
+margin:2px auto;
+width:860px;
+}
+
+#search-div .headline
+{
+    color: #345873;
+    font-weight: bold;
+    margin-bottom: 14px;
+    padding: 7px;
+text-decoration: underline;
+}
+
+#search-box
+{
+text-align:left;
+position:relative;
+z-index:3;
+}
+.search-hp
+{
+float:left;
+margin:0px 20px 0 0;
+}
+.search-sp
+{
+float:right;
+}
+.searchinput
+{
+    font: 12px/1.5em Arial,Helvetica,sans-serif;
+    margin: 0;
+    width: 170px;
+padding:4px 14px 4px 5px;
+border:1px solid #ddd;
+border-radius:13px;
+-moz-border-radius:13px;
+background-repeat:no-repeat;
+background-position:center right;
+}
+.inact
+{
+background-image:url('../images/search-icon.gif');
+
+}
+.act
+{
+
+background-image:url('../images/loader.gif');
+}
+.textg{
+font-style:italic;
+color:#ADA96E;
+}
+.searchinput:focus,
+.textb
+{
+color:#3b3131;
+font-style:normal;
+box-shadow:0px 0px 4px #345873;
+}
+
+.autocomp
+{
+background:#fff;
+border:1px solid #DDD;
+z-index:-1;
+color:#345873;
+text-align:left;
+border-radius:13px;
+-moz-border-radius:13px;
+box-shadow:0px 0px 4px #345873;
+left:0;
+top:0;
+position:absolute;
+padding-top:36px;
+}
+.autocomp ul
+{
+margin:0px 0px;
+text-align:left;
+}
+.autocomp ul li,
+.autocomp li
+{
+    width: 170px;
+padding:4px 14px 4px 5px;
+font-size:12px;
+margin-left:0px;
+list-style-type:none;
+list-style-position:inside;
+border-bottom:1px solid #DDD;
+cursor:pointer;
+display:inherit;
+}
+.autocomp ul li:hover, .autocomp li:hover,
+.selectedli
+{
+background:#345873;
+color:#fff;
+}
+#map_canvas{
+	background-color:#e5e5e5;
+width:500px;
+height:500px;
+	 z-index:1;
+}
+

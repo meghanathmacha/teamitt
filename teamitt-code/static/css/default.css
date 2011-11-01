@@ -1,0 +1,78 @@
+.contentWrapper .pageHeading
+{
+margin: 10px 5px 5px 20px;
+font-size: 16px;
+font-weight: bold;
+}
+
+.contentWrapper h3
+{
+color: #345873;
+margin: 14px 0px 5px 0px;
+}
+
+.contentWrapper .maindata p
+{
+padding: 7px 10px;
+color: #444444;
+font-family: Tahoma,Helvetica,Verdana, arial;
+width: 600px;
+line-height: 20px;
+}
+
+.contentWrapper .maindata p a
+{
+text-decoration: underline;
+color: #c25547;
+}
+
+#required,
+li .err  {
+background: firebrick;
+color: #FFFFFF;
+padding: 4px;
+font-weight: bold;
+font-size: 13px;
+display: none;
+}
+
+
+li .err
+{
+width: 480px;
+}
+li .err a 
+{
+color: orange;
+}
+#required {
+width: 60%;
+margin: 4px auto;
+text-align: center;
+}
+
+#regform .formerr
+{
+color:firebrick;
+font-size:14px;
+font-weight:bold;
+}
+
+#regform .err:before
+{
+content: url("../images/alert.png");
+margin:2px;
+}
+
+.busy
+{
+
+}
+
+.loading:after
+{
+content: url("../images/loader.gif");
+margin-left: 5px;
+}
+
+

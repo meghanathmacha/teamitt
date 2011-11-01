@@ -1,0 +1,42 @@
+.inviteli
+{
+width: 80%;
+}
+.inviteli .inviteDiv
+{
+position: relative;
+}
+
+.inviteli textarea
+{
+width: 100%;
+}
+.inviteLoading
+{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background: #f6f6f6 url("../images/loader.gif") no-repeat center center;
+opacity: 0.6;
+display: none;
+padding: 0 4px;
+}
+#inviteResult
+{
+margin-left: 10px;
+font-weight: bold;
+}
+
+.copen
+{
+margin: 4px 10px;
+color: #3b3131;
+}
+.copen input
+{
+margin: 4px 0;
+}
+
+

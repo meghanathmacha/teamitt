@@ -1,0 +1,321 @@
+#content .contentWrap
+{
+min-height:400px;
+height:auto;
+}
+
+
+
+#leftCont
+{
+float:left;
+width:160px;
+padding-bottom: 10px;
+}
+
+.company-pic
+{
+margin: 5px;
+background: #e5e5e5;
+height: 90px;
+width: 150px;
+}
+
+.comp-pic
+{
+margin-bottom: 20px;
+background : #e5e5e5;
+padding: 5px;
+height:150px;
+}
+.comp-pic img
+{
+background :#fff;
+}
+
+.listings
+{
+margin-bottom: 5px;
+}
+.listings ul li
+{
+list-style-type: none;
+font-size: 18px;
+margin-top: 7px;
+}
+
+.listings ul li a
+{
+display: block;
+padding: 6px 3px;
+color: #111;
+}
+
+
+.listings ul li a:hover,
+.listings ul li a.selected
+{
+background: #4477ff;
+color: #fff;
+}
+
+.listings ul li a.selected
+{
+font-weight: bold;
+}
+
+.connections
+{
+margin-top: 5px;
+padding-top: 10px;
+}
+.sectionHeader
+{
+padding: 4px 5px;
+margin-bottom: 7px;
+}
+.connections ul li
+{
+list-style-type: none;
+font-size: 12px;
+clear: both;
+}
+
+.connections ul li a
+{
+padding: 2px 3px;
+color: #3b3131;
+}
+
+.tuserpic
+{
+height: 50px;
+width: 50px;
+background: #e5e5e5;
+margin: 5px;
+}
+
+#riteCont
+{
+float:left;
+width:222px;
+position: relative;
+}
+
+#mainCont
+{
+float:left;
+width:600px;
+}
+#mainHeader
+{
+height: 100px;
+}
+.section
+{
+margin: 4px;
+}
+.sectionHead
+{
+font-weight: bold;
+background: #f6f6f6;
+padding: 4px 2px;
+font-size: 12px;
+}
+.sectionBody
+{
+padding: 3px;
+}
+
+.contTop
+{
+background: #f6f6f6;
+box-shadow: 0px 0px 3px #4477ff;
+-moz-box-shadow: 0px 0px 3px #4477ff;
+khtml-box-shadow: 0px 0px 3px #4477ff;
+-webkit-box-shadow: 0px 0px 3px #4477ff;
+
+border-radius: 0px 0px 9px 9px;
+-mox-border-radius: 0px 0px 9px 9px;
+khtml-border-radius: 0px 0px 9px 9px;
+
+
+border-right: 1px solid #4477Ff;
+border-left: 1px solid #4477Ff;
+border-bottom: 1px solid #4477Ff;
+
+}
+
+.postArea {
+padding: 15px;
+}
+input, textarea, select
+{
+font-family: arial, verdana;
+}
+.postArea .postTitle
+{
+margin: 4px;
+color: #3b3131;
+margin-bottom: 10px;
+}
+
+.postTitle h3
+{
+display: inline;
+margin-right: 10px;
+}
+.postTitle span
+{
+font-size: 15px;
+margin-right: 8px;
+padding: 5px; 
+cursor: pointer;
+}
+
+.postTitle span i
+{
+display: none;
+}
+.postTitle span:hover,
+.postTitle span.selected
+{
+background: #4477ff;
+color: #fff;
+border-color: #fff;
+box-shadow: 0px 0px 5px #4477ff;
+}
+
+.postTitle span.selected
+{
+font-weight: bold;
+}
+
+.postTitle span.selected i
+{
+display: inherit;
+}
+
+span.recv_span
+{
+position: relative;
+z-index: 2;
+}
+.recv
+{
+padding: 2px 4px;
+width: 400px;
+}
+.recv span
+{
+margin: 5px 4px;
+padding: 4px;
+background: #f6f6f6;
+display: inline-block;
+}
+
+.recv span b
+{
+position: relative;
+top: 4px;
+}
+.recv span b:after
+{
+content: url("../images/delete2.png");
+padding: 0;
+cursor: pointer;
+}
+
+#postFor
+{
+background-color: #fff;
+background-repeat: no-repeat;
+background-position: center right;
+}
+#get_contributors
+{
+background-color: #fff;
+background-repeat: no-repeat;
+background-position: center right;
+}
+
+.autouser
+{
+background:#fff;
+border:1px solid #DDD;
+z-index:-1;
+color:#4477FF;
+box-shadow:0px 0px 4px #4477ff;
+left:0;
+top:0;
+position:absolute;
+padding-top:20px;
+}
+.autouser ul
+{
+margin:0px 0px;
+text-align:left;
+}
+.autouser ul li,
+.autouser li
+{
+    width: 190px;
+padding:4px 14px 4px 5px;
+font-size:12px;
+margin-left:0px;
+list-style-type:none;
+list-style-position:inside;
+border-bottom:1px solid #DDD;
+cursor:pointer;
+display:inherit;
+}
+.autouser ul li:hover, .autouser li:hover,
+.selectedli
+{
+background:#345873;
+color:#fff;
+}
+
+
+
+
+.postArea textarea,
+.postArea input[type='text']
+{
+font-size: 14px;
+background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    margin: 2px 0;
+    padding: 4px;
+}
+
+
+.postArea input[type='text']
+{
+width: 200px;
+}
+
+.postArea textarea
+{
+    width: 475px;
+height: 50px;
+display: block;
+
+}
+.postArea textarea:focus,
+.postArea input[type='text']:focus
+{
+box-shadow: 0px 0px 2px blue;
+}
+
+.postArea .postForm
+{
+width: 480px;
+margin-top: 8px;
+}
+.postForm .postButton
+{
+text-align: right;
+margin-top: 7px;
+}
+

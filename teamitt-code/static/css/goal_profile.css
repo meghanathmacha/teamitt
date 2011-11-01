@@ -1,0 +1,22 @@
+.wall_help_message {
+margin-left:11%;
+padding:4%;
+margin-top:-12%;
+}
+.wall_post {
+}
+.wall_pic img {
+border-right:1px solid lightgrey;
+padding:1% 1% 1% 1%;
+width:7%;
+}
+.wall_message {
+margin-top:-5%;
+margin-left:11%;
+padding:4%;
+}
+.wall_post {
+border-bottom:1px solid lightgray;
+padding:1% 0% 1% 0%
+}
+

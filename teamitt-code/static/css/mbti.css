@@ -1,0 +1,149 @@
+.mbti-icons ul
+{
+margin: 1em;
+}
+
+/*.file_section_display ul li, */
+.mbti-icons ul li,
+.goal-mbti-icons ul li
+{
+list-style-type: none;
+padding: 0px;
+border: 1px solid #e5e5e5;
+margin: 5px 0 8px 0;
+width: 510px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+khtml-border-radius: 5px;
+webkit-border-radius: 5px;
+
+}
+
+/*.file_section_display ul li .upload_file,*/
+.mbti-icons ul li .mbti-result,
+.goal-mbti-icons ul li .mbti-result
+{
+padding: 5px;
+}
+
+/*.file_section_display ul li a.file-icon,*/
+.mbti-icons ul li a.mbti-icon,
+.goal-mbti-icons ul li a.goal-mbti-icon
+{
+font-size: 18px;
+font-weight: bold;
+display: block;
+background: transparent url("../images/tab_head_bg.gif") no-repeat;
+height: 24px;
+color: #fff;
+text-decoration : none;
+padding: 5px;
+}
+
+.file_section_display ul li a.closed:before, 
+.mbti-icons ul li a.closed:before,
+.goal-mbti-icons ul li a.closed:before
+{
+content: url("../images/expand.jpg");
+margin: 0 4px;
+}
+
+.file_section_display ul li a.opened:before, 
+.mbti-icons ul li a.opened:before,
+.goal-mbti-icons ul li a.opened:before
+{
+content: url("../images/collapse.jpg");
+margin: 0 4px;
+}
+
+
+
+#mbti_like {
+cursor:pointer;
+}
+
+#mbti_comment {
+cursor:pointer;
+}
+
+.goal_mbti_tip, .goal_mbti_checklist, 
+.mbti_sent
+{
+margin: 4px 0 20px 0;
+}
+
+.goal_tip_base, .goal_checklist_base, 
+.mbti_base
+{
+width: 480px;
+margin: 7px 2px;
+}
+
+.goal_tip_base span, .goal_checklist_base span, 
+.mbti_base span {
+color:#8B008B;
+cursor:pointer;
+font-weight:bold;
+padding:1px;
+}
+.mbti_show_comm textarea {
+background-color:#FFFFFF;
+border:1px solid #DDDDDD;
+font-family:arial;
+font-size:13px;
+height:30px;
+margin:2px 0;
+padding:4px;
+width:475px;
+}
+
+.goal_tip_base .add_answer_div, .goal_checklist_base .add_anser_div, 
+.mbti_base .add_answer_div
+{
+text-align:right;
+}
+
+
+.help_answer a
+{
+margin: 0; 
+}
+
+.help_answer a:hover
+{
+
+text-decoration: underline;
+}
+.mbti-result,
+.goal-mbti-result
+{
+min-height: 100px;
+display: none;
+padding: 8px;
+background: #fff;
+width: 90%;
+margin: 4px auto;
+}
+.mbti-result .close-mbti,
+.goal-mbti-result .close-mbti
+{
+margin-right: 10px;
+cursor: pointer;
+background: #fff;
+padding: 2px;
+}
+
+.user-profile-tabs-goal
+{
+float: top;
+float: right;
+text-align:left;
+cursor:pointer;
+color:#345873;
+font-weight:bold;
+margin-top:0px; 
+margin-left:0px;
+width:150px;
+}
+
+

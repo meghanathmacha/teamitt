@@ -1,0 +1,104 @@
+ ol {
+	list-style:none;
+	margin:10px 0 0 0;
+	padding:0;
+}
+ol li {
+	display:block;
+}
+
+input.image
+{
+background: #ffffff;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:5px 2px;
+}
+
+input.text,textarea,input.image
+{
+font-family:arial;
+font-size:16px;
+}
+input.submit
+{
+font-family: arial;
+background: #CCC;
+color: #111;
+padding: 5px;
+font-size: 15px;
+border-width: 0;
+}
+input.text:focus, textarea:focus
+{
+khtml-box-shadow: 0px 0px 4px #4E7EF9; 
+-moz-box-shadow: 0px 0px 4px #4E7EF9; 
+webkit-box-shadow: 0px 0px 4px #4E7EF9; 
+box-shadow: 0px 0px 4px #4E7EF9; 
+
+}
+
+ol li label {
+	display:block;
+	margin:3px 0;
+	padding:16px 0 0 0;
+	font-size:18px;
+}
+ol li input.text {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:5px 2px;
+}
+ol li textarea {
+	width:480px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:4px;
+	background-color:#fff;
+}
+
+ol li select {
+	width: 200px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:4px;
+	background-color:#fff;
+}
+
+
+.err
+{
+font-size:12px;
+font-weight:bold;
+}
+
+.form-error
+{
+font-size: 15px;
+margin: 8px 2px;
+padding: 5px;
+width: 60%;
+color: #3b3131;
+background: #FAF0BB url("../images/alert.png") no-repeat center left;
+padding-left: 25px;
+}
+
+.form-error a
+{
+color: #111;
+font-weight: bold;
+}
+.succ
+{
+font-weight: 16px;
+margin: 7px 2px;
+color: #111;
+}
+
+input.blank
+{
+	background-color:#ddd;
+box-shadow: 0px 0px 4px #f00;
+}
+

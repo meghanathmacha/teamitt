@@ -1,0 +1,69 @@
+/* Bar Graphs */
+.graph {
+  width: 250px;
+  position: relative;
+  right: 30px;
+padding-top:6px;
+}
+.bar-title {
+  position: relative;
+  float: left;
+  width: 104px;
+  line-height: 20px;
+  margin-right: 17px;
+  font-weight: bold;
+  text-align: right;
+}
+.bar-container {
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 10px;
+  margin: 0px 0px 15px;
+}
+
+.bar-container div {
+  background-color:#cc4400;
+  height: 20px;
+}
+.bar-container strong {
+  position: absolute;
+  right: -32px;
+  top: 0px;
+  overflow: hidden;
+}
+#poll-results p {
+  text-align: center;
+}
+.poll-container {
+padding:13px;
+}
+.poll_header {
+border:1px solid skyBlue;
+height:24px;
+text-align:center;
+background-color:skyBlue;
+color:black;
+}
+input[type='button'] ,input[type='submit'] {
+background-color:skyBlue;
+width:90px;
+border:1px solid gray;
+font-weight:bold;
+cursor:pointer;
+margin-top:15px;
+}
+#poll_result_header {
+margin-top:-13px;
+padding-bottom:16px;
+border-bottom:1px solid gray;
+}
+#poll_post_div {
+padding:0px;
+margin-left:114px;
+margin-top:-48px;
+}
+.poll_h3 {
+width:100px;
+padding:13px;
+}

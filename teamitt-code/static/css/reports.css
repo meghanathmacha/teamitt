@@ -1,0 +1,111 @@
+.button:hover {
+background-position: left -22px;
+}
+.in-div a.dp-choose-date{
+        float: left;
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        margin: 5px 3px 0;
+        display: block;
+        text-indent: -2000px;
+        overflow: hidden;
+        background: url(../images/calendar.png) no-repeat;
+}
+.report-header {
+    font-size: 15px;
+text-decoration: underline;
+font-weight: bold;
+}
+.report-back {
+}
+.fixed-width
+{
+width:100px;
+}
+/*.badge-table .selected-td
+{
+background-color: #FFF;
+font-weight: bold;
+}*/
+.name-td:hover,.points-sent:hover ,.points-received:hover
+{
+background-color: #FFF;
+text-decoration:underline;
+cursor:pointer;
+}
+#filter-form input[type='submit'],.button{
+   background: transparent url("../images/btn_smaller.png") no-repeat scroll left top;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Myriad Pro", arial;
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 22px;
+    margin: 0;
+    padding: 0;
+    min-width: 50px;
+text-align: center;
+vertical-align: middle;
+
+}
+#filter-form input[type='submit']:hover
+{
+background-position: left -22px;
+}
+.bring-mid
+{
+margin-top: 128px;
+margin-left: 256px;
+}
+/*.plus{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    cursor:pointer; 
+}
+
+.detailsRow img{
+    float:right;    
+}
+
+*/
+/* Style from TableSorter */
+/*table.tablesorter {
+    font-family:arial;
+    background-color: #CDCDCD;
+    margin:0px 0pt 0px;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    font-size: 8pt;
+    padding: 4px;
+}
+table.tablesorter thead tr .header {
+    background-image: url(bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+    white-space:nowrap;
+}
+table.tablesorter tbody td {
+    color: #3D3D3D;
+    background-color: #FFF;
+    vertical-align: top;
+}
+
+table.tablesorter tbody td.native {
+    padding: 4px;
+}
+
+table.tablesorter tbody tr.odd td {
+    background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(asc.gif);
+}*/

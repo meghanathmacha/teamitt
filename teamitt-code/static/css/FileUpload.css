@@ -1,0 +1,127 @@
+.upload-link
+{
+float: top;
+float: right;
+text-align:left;
+cursor:pointer;
+color:#345873;
+font-weight:bold;
+margin-top:0px;
+margin-left:0px;
+width:150px;
+position:absolute;
+top:190px;
+right:600px;
+}
+
+.delete_file
+{	position: absolute;	
+	left: 467px; 
+    color: #777777;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 2px 0 2px 3px;
+    text-decoration: none;
+}
+
+.tag_span
+{
+-moz-border-radius: 5px 5px 5px 5px;
+display: block;
+    float: left;
+    margin: 8px 5px 2px 2px;
+}
+.tag_item
+{
+	position: relative; 
+	left: 38px; 
+}
+.tag_link
+{
+background-color: #DEE7F8;
+    border: 1px solid #CAD8F3;
+    padding: 2px 4px 3px;
+}
+.tag_delete
+{
+color: #777777;
+background-color: #DEE7F8;
+    cursor: pointer;
+    font-size: 9px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 2px 5px 2px 1px;
+    text-decoration: none;
+}
+
+.tag_txtbox
+{
+	padding: 2px 5px 2px 1px;	
+}
+#txt_tags
+{	position: relative; 
+	left: 52px; 
+}
+#add_tag
+{
+	position: relative; 
+	left: 56px;
+}
+#txt_txtbox
+{
+margin: 2px; 
+}
+#filetoupload
+{
+	position: relative; 
+	left: 100px; 
+}
+#submit
+{	position: relative; 
+	left: 123px;
+	padding: 0px; 
+}
+#tags
+{	top: 0px; 
+	padding: 5px;
+	position: relative;  
+}
+.file_name, .file_owner, .file_size, .file_date 
+{	position: absolute; 	
+	padding: 2px 10px 2px 1px;
+}
+.file_tags, .file_tag
+{	padding: 2px;
+	margin: 2px;
+}
+.file_size
+{
+	left: 200px; 
+}
+.file_date
+{
+	left: 300px; 
+}
+.file_data
+{	position: relative; 
+	padding: 5px;
+        margin: 0px;
+}
+.disp_message
+{
+	font-weight: bold; 
+	text-align: center; 
+	
+}
+.file_tag, .showallfiles
+{
+	color: blue; 
+	cursor: pointer; 
+}
+.showallfiles
+{
+position:relative; 
+left: 256px; 
+}

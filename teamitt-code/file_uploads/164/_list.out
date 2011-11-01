@@ -1,0 +1,106 @@
+    1  sudo gedit /usr/lib/polkit-1/localauthority/
+    2  sudo gedit /usr/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+    3  sudo gedit /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+    4  ssh abhijeet@ltrc.iiit.ac.in
+    5  mysql -u root -p
+    6  ping proxy.iiit.ac.in
+    7  df -h
+    8  top
+    9  sudo su
+   10  df -h
+   11  cat /etc/issue
+   12  sudo apt-get install apache2 php5 mysql-server 
+   13  sudo apt-get install apache2 php5 mysql-server mysql-client
+   14  top
+   15  df -h
+   16  top
+   17  ls
+   18  df -h
+   19  cd /var/www/
+   20  ls
+   21  vi index.html 
+   22  ls -al
+   23  mkdir abhijeet
+   24  cd ..
+   25  ls
+   26  ls -al
+   27  chown abhijeet:abhijeet ./www -R 
+   28  sudo chown abhijeet:abhijeet ./www -R 
+   29  ls -al
+   30  cd www
+   31  ls
+   32  ls -al
+   33  mkdir test
+   34  ls
+   35  rm -rf test
+   36  ls
+   37  claer
+   38  clear
+   39  who
+   40  sudo su
+   41  eixt
+   42  exit
+   43  who
+   44  ls
+   45  exit
+   46  shutdown
+   47  sudo shudown now
+   48  sudo shutdown now
+   49  df -h
+   50  ruby -v
+   51  which gem
+   52  [sudo] gem update --system 1.8.5
+   53  sudo gem update --system 1.8.5
+   54  ruby setup.rb
+   55  cd /usr/bin/gem
+   56  cd /usr/bin
+   57  ls g*
+   58  ls ge*
+   59  cd gem
+   60  vi gem
+   61  locate rubygems
+   62  cd /home/abhijeet/.rvm
+   63  locate git
+   64  curl -s https://rvm.beginrescueend.com/install/rvm
+   65  ls
+   66  cd ~
+   67  ls
+   68  curl -s https://rvm.beginrescueend.com/install/rvm
+   69  curl -sk https://rvm.beginrescueend.com/install/rvm
+   70  ruby1.9.1 
+   71  git 
+   72  sudo curl -sk https://rvm.beginrescueend.com/install/rvm
+   73  sudo apt-get install curl git-core
+   74  bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+   75  sudo apt-get install aptitude
+   76  sudo aptitude update
+   77  sudo aptitude install build-essential get-core curl
+   78  sudo aptitude install build-essential git-core curl
+   79  bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+   80  bash <<( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+   81  bash < <( curl http://rvm.beginrescueend.com/releases/rvm-install-head )
+   82  whp
+   83  who
+   84  sudo vi /var/lib/NetworkManager/NetworkManager.state 
+   85  sudo rfkill unblock all
+   86  service networking stop
+   87  service networking restart
+   88  service network-manager 
+   89  service network-manager restart
+   90  service network-interface restart
+   91  service networking stop
+   92  service networking start
+   93  service networking 
+   94  service networking start 
+   95  service networking restart
+   96  java
+   97  service networking restart
+   98  service networking start
+   99  ifconfig
+  100  ping proxy.iiit.ac.in
+  101  df -h
+  102  ssh root@shakit.iiit.ac.in
+  103  ssh root@shakti.iiit.ac.in
+  104  cd ~
+  105  pwd
+  106  history >list.out

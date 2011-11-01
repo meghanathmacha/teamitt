@@ -1,0 +1,100 @@
+#eventForm
+{
+margin:5px 20px;
+}
+
+#eventForm ol {
+	list-style:none;
+}
+#eventForm ol li {
+	display:block;
+}
+
+.formSubmit input,
+.formSubmit select,
+.formSubmit textarea
+{
+opacity:0.4;
+}
+
+
+
+input.text,
+select,
+textarea
+{
+font-family:arial;
+font-size:14px;
+
+}
+#eventTime
+{
+font-size:12px;
+}
+
+input.text:focus,
+select:focus,
+textarea:focus
+{
+khtml-box-shadow: 0px 0px 4px #345873; 
+-moz-box-shadow: 0px 0px 4px #345873; 
+webkit-box-shadow: 0px 0px 4px #345873; 
+box-shadow: 0px 0px 4px #345873; 
+
+}
+
+#eventForm ol li label {
+	display:block;
+	margin:3px 0;
+	padding:16px 0 0 0;
+	font-size:14px;
+}
+#eventForm ol li input.text,
+#eventForm ol li textarea {
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:5px 2px;
+	background-color:#fff;
+}
+#eventForm ol li input.text {
+	width:220px;
+}
+#eventForm ol li textarea {
+	width:350px;
+}
+
+
+
+#eventForm ol li select {
+	width:220px;
+	border:1px solid #c0c0c0;
+	margin:2px 0;
+	padding:4px;
+	background-color:#fff;
+}
+
+#eventForm .err
+{
+color:firebrick;
+font-size:14px;
+font-weight:bold;
+}
+
+#eventForm .err:before
+{
+content: url("/static/images/alert.png");
+margin:2px;
+}
+
+#formLoad
+{
+position:relative;
+top:-10px;
+padding-left:10px;
+}
+.formLoad:after
+{
+content: url("/static/images/loader.gif");
+}
+
+

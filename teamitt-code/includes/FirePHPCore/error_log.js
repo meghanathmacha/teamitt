@@ -1,0 +1,2 @@
+[03-Apr-2011 01:22:29] PHP Warning:  require_once(Debug.class.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home1/lovegeni/public_html/goalcat/FirePHPCore/fbPost2.php on line 2
+[03-Apr-2011 01:22:29] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Debug.class.php' (include_path='.:/usr/lib64/php:/usr/lib/php') in /home1/lovegeni/public_html/goalcat/FirePHPCore/fbPost2.php on line 2

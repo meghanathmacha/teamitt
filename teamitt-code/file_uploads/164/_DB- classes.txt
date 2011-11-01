@@ -1,0 +1,63 @@
+FILE 1 CODE ( MAIN CLASS : initDB )  :  
+
+<?php
+class DB
+{
+protected $link=null;
+public $status=1;
+public function  __construct()
+{
+$this->link=mysql_connect("localhost","root","password");
+$res=mysql_select_db("ILMT",$this->link);
+if(!$this->link || !$res)
+{
+$this->status=null;
+die("Mysql Connection Eror ".mysql_error());
+}
+
+}
+
+public function __destruct()
+{
+//mysql_close($this->link);
+}
+
+}
+
+?>
+~     
+
+FILE 2 CODE ( Extended class : usersDB): 
+<?php
+class FileUpload extends DB
+{
+        public function get_category_list($goalID, $flag)
+        {
+                if ($this->link)
+                {       if ($flag==1)
+                                $query="select uploadCategoryID as id, category from goal_uploads_category where goalID=". $goalID ." order by category";
+                        else
+                                $query="select category from goal_uploads_category where goalID=". $goalID ." order by category";
+                        $result=mysql_query($query,$this->link);
+                        if (mysql_affected_rows()>0)
+                        {       $r=mysql_num_rows($result);
+                                for ($i=0; $i<$r; $i++)
+                                {
+                                        $row[]=mysql_fetch_assoc($result);
+                                }
+                        }
+                        else
+                        {       if ($flag==1)
+                                {       $query="INSERT INTO `goal_uploads_category`(`category`, `goalID`) VALUES ('Default',".$goalID.")";
+                                        mysql_query($query,$this->link);
+                                        $row[]=array('id'=>mysql_insert_id(),'category'=>'Default');
+                                }
+                        }
+                        return $row;
+                }
+                return 0;
+        }
+} 
+?>
+
+

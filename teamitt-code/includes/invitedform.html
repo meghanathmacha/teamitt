@@ -1,0 +1,44 @@
+	 <form action="" method="post" id="rform">
+	   <ol>
+              <li>
+		<label for="fname">First Name:</label>
+                <input type="text" id="fname"  placeholder="Your first name" name="fname" class="text" required="true" />
+<div class='err' id="e-fname"></div>
+              </li>
+              <li>
+		<label for="lname">Last Name:</label>
+                <input type="text" id="lname"  placeholder="Your last name" name="lname" class="text" required="true" />
+<div class='err' id="e-lname"></div>
+              </li>
+              <li>
+		<label for="gender">I am :</label>
+		<select name="gender" id="gender">
+		<option value="M">Male</option>
+		<option value="F">Female</option>
+		</select>
+              </li>
+
+              <li>
+		<label for="password">Password:</label>
+                <input type="password" id="password"  placeholder="Your password" onblur="isValidPassword()" name="password" class="text" required="true" />
+		<small>( minimum of 6 characters)</small>
+<div class='err' id="e-pass"></div>
+              </li>
+              <li>
+		<label for="cpassword">Confirm Password:</label>
+                <input type="password" id="cpassword"  placeholder="Re-enter password" name="cpassword" class="text" required="true" />
+<div class='err' id="e-cpass"></div>
+              </li>
+
+              <li>
+		<label for="title">Title:</label>
+                <input id="title"  placeholder="Title" name="title" class="text" required="true" />
+              </li>
+ <li>
+<label></label>
+                <input type="submit" name="regForm" id="regForm" value="Submit"  class="send btn_small" />
+</li>
+</ol>
+
+          </form>
+

@@ -1,0 +1,139 @@
+#goalbox
+{
+width: 600px;
+position: relative;
+margin: 0 auto;
+overflow-x: hidden;
+overflow-y: auto;
+min-height: 460px;
+}
+#boxContainer{
+position: absolute;
+left: 0;
+top: 0;
+width: 2500px;
+}
+.ibox
+{
+float: left;
+width:592px;
+background: transparent url("../images/backdrops.png")  repeat;
+padding: 4px;
+}
+.title-box
+{
+}
+.title-cont
+{
+background: #fff;
+padding: 6px;
+}
+.reward-box
+{
+}
+
+.nav-but
+{
+margin: 7px 7px;
+}
+.next
+{
+float: right;
+}
+.prev
+{
+margin-right: 30px;
+}
+.next,.prev
+{
+ background: -moz-linear-gradient(center top , #FFFFFF, #CCCCCC) repeat scroll 0 0 transparent;
+    border: 1px solid #AAAAAA;
+    border-radius: 8px;
+    color: #111111;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #FFFFFF;
+
+}
+.nav-but input.button 
+{
+margin: 5px;
+}
+
+.rewardcont
+{
+background: #fff;
+padding: 6px;
+
+}
+.reward-head
+{
+font-size: 16px;
+border-bottom: 1px solid #e5e5e5;
+margin-bottom: 4px;
+padding-bottom: 4px;
+}
+.rewards
+{
+background: #fff;
+padding: 6px;
+width: 580px;
+padding: 0;
+height: 400px;
+overflow-y: auto;
+margin: 0px auto;
+}
+
+div.reward-wrap
+{
+width:220px;
+margin: 15px 15px;
+display:inline-block;
+}
+div.reward,
+div.people,
+div.loadMore
+{
+width:210px;
+padding: 3px;
+background-color: #3b3131;
+border-radius: 5px;
+cursor: pointer;
+border: 1px inset #3b3131;
+}
+
+.rselected,
+.pselected,
+div.reward:hover,
+div.people:hover
+{
+box-shadow:0px 0px 8px #C25547;
+border-style: outset;
+border-color: #C25547;
+}
+.rselected,
+.pselected 
+{
+background: #3b3131 url("../images/reward-icon.png") no-repeat right bottom;
+}
+.reward-img
+{
+width: 100%;
+text-align: center;
+overflow-x: hidden;
+}
+
+.reward-title
+{
+color: #fff;
+padding: 4px;
+width: 200px;
+text-align: center;
+margin: 0 auto;
+}
+.loadMore-img:after
+{
+content: url("../images/loadMore.png");
+}
+
+

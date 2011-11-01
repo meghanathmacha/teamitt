@@ -1,0 +1,31 @@
+.tabs li:hover {
+text-decoration: underline
+/*-moz-box-shadow:5px 5px 5px #E6E6FA;
+box-shadow:5px 5px 5px #E6E6FA;*/
+}
+.tabs li:visited ,#tab_visited {
+background-color:#87CEEB;
+}
+/*.tabs li {
+float:left;
+border:1px solid #FFF;
+cursor:pointer;
+width:115px;
+text-align:center;
+padding-top:10px;
+padding-bottom:10px;
+background-color:#E6E6FA;
+}*/
+.tabs li
+{
+float: left;
+cursor: pointer;
+width: 248px;
+text-align: center;
+}
+.tabs {
+list-style:none;
+padding-left:19px;
+position:relative;
+padding-top: 3px
+}

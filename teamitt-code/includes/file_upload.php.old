@@ -1,0 +1,161 @@
+<?php 
+
+include("ajaxid.php");
+include("feed_helper.php");
+
+require_once ("../DB/initDB.php") ; 
+include ("../DB/FileUpload.php") ; 
+include_once("file_upload_functions.php"); 
+include_once("checkid.php");
+include_once("../DB/usersDB.php"); 
+
+$ref = getenv('HTTP_REFERER');
+$url = (parse_url($ref));
+if(strlen($url["query"])>0)
+	$query = explode("=", $url["query"]);
+
+//$action_type=$_GET["action_type"];
+$goalID=$query[1]; 
+$fDB=new FileUpload(); 	
+$uDB=new usersDB(); 
+$userID=$USERID; 
+$username=$uDB->fullName($userID,NULL);
+
+// UPLOAD VARIABLES ***
+if(isset($_POST['submit'])) 
+{	$max_filesize = 5242880; // Maximum filesize in BYTES (currently 5MB).
+//	$upfile=$_POST['filename']; 
+	$upfile='filetoupload'; 
+	$category=$_POST['category_list'];
+	$timestamp=time();
+	$upload_path="/home/ec2-user/teamitt/file_uploads/";	
+	$upload_path1="file_uploads/";	
+	$filename = $_FILES[$upfile]['name']; // Get the name of the file (including file extension).
+	$filesize=filesize($_FILES[$upfile]['tmp_name']); 
+	
+	if (!is_dir($upload_path))
+                mkdir($upload_path,0777);
+	$upload_path=$upload_path . $goalID . '/';
+	$upload_path1=$upload_path1 . $goalID . '/';
+	if (!is_dir($upload_path))
+                mkdir($upload_path,0777);
+
+	// Now check the filesize, if it is too large then DIE and inform the user.
+           if(filesize($_FILES[$upfile]['tmp_name']) > $max_filesize)
+		{ 	echo "<div id='filesize_error' title='Filesize Limit Exceeded'>"; echo "</div>";die();    }
+	// Check if we can upload to the specified path, if not DIE and inform the user.
+           if(!is_writable($upload_path))
+		{	echo "<div id='path_error' title='Cannot Write to Directory'>"; echo "</div>";die();	}
+ 
+
+	if(move_uploaded_file($_FILES[$upfile]['tmp_name'],$upload_path .$filename."_".$timestamp))
+	{
+			chmod($upload_path. $filename, 777);
+			// 0 for $userID AND 'NULL' for $filedescription when resolved
+          		$result=$fDB->insert_file_details($filename."_".$timestamp,$category,$timestamp,$goalID,$upload_path1,$userID, filesize($_FILES[$upfile]['tmp_name']), 'NULL');
+			if ($result!=0) 
+				echo "<div id='upload_message' title='success'>Successful";
+			else 
+				echo "<div id='upload_message' title='fail'>";
+			echo "</div>";
+	 }
+         else
+         	echo "<div id='upload_message' title='Error In file Upload'> "; echo "</div>";
+         $filesize=formatBytes($filesize, 1); 
+	$fdate=date("Y-m-d H:i A", $timestamp);
+	echo "<script>window.parent.afterUpload('$result','$filename','$category','$fdate','$upload_path1','$filesize','$username');</script>";	
+		//echo $retval; 
+		//echo true;
+	
+}
+// ********************	
+
+
+
+if(isset($_GET['action']))
+{ 
+	$action=$_GET["action"]; 
+
+	if ($action==1) 
+	{ 
+		// POPULATE THE CATEGORY LIST OF THE HTML SELECT TAG 
+		$categories=$fDB->get_category_list($goalID,1); 
+		$a=sizeof($categories); 
+//		echo "<option value='".$a."'>".$a."</option>";		
+		for ($i=0;$i<$a;$i++) 
+		{	 
+			echo "<option value='".$categories[$i]['id']."'>".$categories[$i]['category']."</option><br/>"; 
+		} 
+	
+	}
+	
+	if ($action==2) 
+	{ 
+		// POPULATE THE FILE LIST FROM DATABASE 
+		$categories=$fDB->get_category_list($goalID,1);
+                $a=sizeof($categories);
+		$file_list=$fDB->get_file_list($goalID); 
+		$b=sizeof($file_list); 
+                for ($i=0;$i<$a;$i++)
+                {	echo "<div id=".$categories[$i]['id']." class='each_category'>";
+			echo "<span class='category_heading'>".$categories[$i]['category']."</span>";	
+			echo "<span class='category_data'>"; 
+			$found=0; 
+			for ($j=0;$j<$b;$j++) 
+			{ 	if ($categories[$i]['id']==$file_list[$j]['uploadCategoryID']) 
+				{	$found++;  
+				$uploadID=$file_list[$j]['uploadID']; $filename=$file_list[$j]['filename']; $filepath=$file_list[$j]['filepath']; 
+				$filedescription=$file_list[$j]['filedescription'] ; 
+				$size=$file_list[$j]['filesize']; $userID=$file_list[$j]['userID'];
+				$size=formatBytes($size, 2);
+				$uploadDate=$file_list[$j]['uploadDate'];	$filename=explode("_",$filename);  
+				$fdate=date("Y-m-d H:i A", $uploadDate);
+				echo "<div id=".$uploadID." class='each_file'>";	
+				echo "<span class='download_file'><a href='".$filepath.$filename."'>".$filename[0]." </a></span>";
+				echo "<span class='delete_file'> X </span>";
+				echo "<span class='upload_from_user'>".$username." </span>";	
+				echo "<span class='file_upload_date'>".$fdate." </span>";
+				echo "<span class='filesize'>".$size." </span>";								
+				echo "</div>"; 		
+				}
+			} 
+			if ($found==0)
+			{ 
+				echo "<div id='no_file' class='no_file'>No File uploaded in this category.</div>"; 
+			} 
+			echo "</span>"; 
+			echo "</div>";	
+		}
+	} 
+} 
+
+if(isset($_POST['delete_file']))
+{
+	$uploadID=$_POST['file_id']; 
+	$result=$fDB->delete_file($goalID,$uploadID); 
+	/*$path;
+	unlink($path);
+	*/
+	echo $result; 
+
+}
+
+if(isset($_POST['new_category']))
+{	$flag=0; 
+	$new_category=$_POST['new_category'];
+	$categories=$fDB->get_category_list($goalID,2);
+	$a=sizeof($categories); 
+	for ($i=0;$i<$a;$i++) 
+	{ 	if ($categories[$i]['category']==$new_category) 
+		{		$flag=1;
+			break; 
+		}
+	} 
+	if ($flag!=1) 
+	{	$res=$fDB->add_new_upload_category($new_category, $goalID); 
+		echo $res; 
+	}
+	if ($flag==1) 
+		echo '-1'; 
+}
+?> 

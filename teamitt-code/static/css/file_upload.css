@@ -1,0 +1,187 @@
+.mbti-icons ul
+{
+margin: 1em;
+}
+
+.file_section_display ul li
+{
+list-style-type: none;
+padding: 0px;
+border: 1px solid #e5e5e5;
+margin: 5px 0 8px 0;
+width: 510px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+khtml-border-radius: 5px;
+webkit-border-radius: 5px;
+
+}
+
+.file_section_display ul li .upload_file
+{
+padding: 5px;
+}
+
+.file_section_display ul li a.file-icon
+{
+font-size: 18px;
+font-weight: bold;
+display: block;
+background: transparent url("../images/tab_head_bg.gif") no-repeat;
+height: 24px;
+color: #fff;
+text-decoration : none;
+padding: 5px;
+}
+
+.file_section_display ul li a.closed:before
+{
+content: url("../images/expand.jpg");
+margin: 0 4px;
+}
+
+.file_section_display ul li a.opened:before 
+{
+content: url("../images/collapse.jpg");
+margin: 0 4px;
+}
+
+.category_heading
+{ 
+font-weight: bold;
+height: 15px;
+background-color:#F2F2F2; 
+width: 500px; 
+}
+#mbti_like {
+cursor:pointer;
+}
+
+#mbti_comment {
+cursor:pointer;
+}
+
+.category_data
+{
+margin: 4px 0 20px 0;
+}
+
+.category_heading
+{
+width: 480px;
+margin: 7px 2px;
+}
+
+.upload_from_user
+{
+padding:1px;
+position: absolute;
+right:790px;
+}
+.file_upload_date
+{
+padding:1px;
+position: absolute;
+right:620px;
+}
+.filesize
+{
+padding:1px;
+position: absolute;
+right:540px;
+}
+.delete_file
+{
+cursor:pointer;
+padding:1px;
+position: absolute; 
+right:480px; 
+}
+
+.category_data {
+background-color:#FFFFFF;
+border:1px solid #DDDDDD;
+font-family:arial;
+font-size:13px;
+height:30px;
+margin:2px 0;
+padding:4px;
+width:475px;
+}
+
+.goal_tip_base .add_answer_div, .goal_checklist_base .add_anser_div, 
+.mbti_base .add_answer_div
+{
+text-align:right;
+}
+
+
+.help_answer a
+{
+margin: 0; 
+}
+
+.help_answer a:hover
+{
+
+text-decoration: underline;
+}
+.mbti-result,
+.goal-mbti-result
+{
+min-height: 100px;
+display: none;
+padding: 8px;
+background: #fff;
+width: 90%;
+margin: 4px auto;
+}
+.mbti-result .close-mbti,
+.goal-mbti-result .close-mbti
+{
+margin-right: 10px;
+cursor: pointer;
+background: #fff;
+padding: 2px;
+}
+
+.upload-link
+{
+float: top;
+float: right;
+text-align:left;
+cursor:pointer;
+color:#345873;
+font-weight:bold;
+margin-top:0px; 
+margin-left:0px;
+width:150px;
+position:absolute;
+top:190px;
+right:600px;
+}
+
+#category_list
+{
+position:relative; 
+right:0px; 
+left:10px; 
+width:300px;
+} 
+#filetoupload
+{
+position:relative; 
+width:300px;
+right:0px;
+left:58px;
+}
+#uploadbutton
+{
+position:relative;
+right:0px;
+left:58px;
+}
+#upload
+{
+height:300px;
+}
